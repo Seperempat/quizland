@@ -1,5 +1,5 @@
 title Quiz National Ijtima 2015
-img ijtema_2015.png
+img logistic.png
 admincode admin1337*
 quizcode ijtema4321
 
