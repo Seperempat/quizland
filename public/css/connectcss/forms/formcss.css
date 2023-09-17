@@ -1,0 +1,14 @@
+.contianer__input {
+  max-width: 600px;
+  height: auto;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 0.45rem;
+  border-width: 1;
+  background-color: #cbd5e1;
+  border-color: #94a3b8;
+}
+
+.contianer__input h3 {
+  margin-bottom: 2rem;
+}
