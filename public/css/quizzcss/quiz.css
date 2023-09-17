@@ -1,0 +1,22 @@
+.container__button__button {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 0 4rem;
+  padding-bottom: 2rem;
+  font-size: 4em;
+  background-color: #f8fafc;
+}
+
+/* style="
+width: 100%;
+position: fixed;
+bottom: 0px;
+height: 60px;
+background-color: rgb(108, 108, 108);
+font-size: 2em;
+color: #000;
+padding-top: 7px;
+padding-right: 10px;
+padding-left: 10px;
+" */

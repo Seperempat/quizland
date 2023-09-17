@@ -402,11 +402,11 @@ function GameWorld() {
         $("#answer_status").html("Correct answer!");
       } else {
         $("#answer_status").html(
-          "<span style='color:#f00'>Incorrect answer!</span>"
+          `<span class="incorrect_answer">Incorrect answer!</span>`
         );
       }
     } else {
-      $("#answer_status").html("<span style='color:#f00'>Time over!</span>");
+      $("#answer_status").html(`<span class="time__over">Time over!</span>`);
     }
   };
 

@@ -491,7 +491,8 @@ function Question() {
   var correctAnswerId = 0;
   var pic = "";
   var time = 10;
-  var marks = 5;
+//   ubah untuk nilai poin
+  var marks = "";
 
   this.setQuestion = function (pQuestion) {
     question = pQuestion;
