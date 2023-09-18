@@ -330,14 +330,20 @@ function GameWorld() {
       var curLetter = String.fromCharCode(65 + i);
       var answerId = i + 1;
 
+      // var $div = $("<div>", { answer_id: answerId })
+      //   .attr(
+      //     "style",
+      //     "font-size:2em; padding-top: 10px; border: 1px solid; margin-top: 2px; overflow:hidden; cursor: pointer; cursor: hand; "
+      //   )
+      //   .addClass("answer_" + answerId)
+      //   .append("<span/>")
+      //   .text(curLetter + ". " + answers[i]);
+
       var $div = $("<div>", { answer_id: answerId })
-        .attr(
-          "style",
-          "font-size:2em; padding-top: 10px; border: 1px solid; margin-top: 2px; overflow:hidden; cursor: pointer; cursor: hand; "
-        )
-        .addClass("answer_" + answerId)
+        .addClass("answer_list")
+        .addClass(`answer_${answerId}`)
         .append("<span/>")
-        .text(curLetter + ". " + answers[i]);
+        .text(`${curLetter}. ${answers[i]}`);
 
       $div.click(function () {
         if (
@@ -348,8 +354,8 @@ function GameWorld() {
           selectedAnswerId = $(this).attr("answer_id");
           socket.emit("quiz_send_answer", { answerId: selectedAnswerId });
 
-          $("#question_area .answers div").css("background-color", "inherit");
-          $(this).css("background-color", "rgb(255, 255, 162)");
+          $("#question_area .answers div").css("background-color", "#f8fafc");
+          $(this).css("background-color", "#eab308");
         }
       });
 

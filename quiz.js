@@ -490,9 +490,9 @@ function Question() {
   var answers = [];
   var correctAnswerId = 0;
   var pic = "";
-  var time = 10;
-//   ubah untuk nilai poin
-  var marks = "";
+  var time = 30;
+  //   ubah untuk nilai poin
+  var marks = 20;
 
   this.setQuestion = function (pQuestion) {
     question = pQuestion;
