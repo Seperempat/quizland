@@ -485,13 +485,13 @@ function Questions() {
   };
 }
 
-function Question() {
-  var question = "";
-  var answers = [];
-  var correctAnswerId = 0;
-  var pic = "";
-  var time = 10;
-  var marks = 5;
+function Question(){
+	var question = "";
+	var answers = [];
+	var correctAnswerId = 0;
+	var pic = "";
+	var time = 30;
+	var marks = 5;
 
   this.setQuestion = function (pQuestion) {
     question = pQuestion;

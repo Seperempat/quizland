@@ -11,6 +11,9 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/frontpages/entry/homepage.css" />
     <link rel="stylesheet" href="css/frontpages/card/card.css" />
+    <link rel="stylesheet" href="css/UI/buttons.css" />
+    <link rel="stylesheet" href="css/connectcss/forms/formcss.css" />
+    <link rel="stylesheet" href="css/frontpages/entry/homepage.css" />
 
     <script src="js/jquery.min.js"></script>
     <script src="socket.io/socket.io.js"></script>
@@ -18,8 +21,22 @@
   </head>
   <body>
     <div class="contianer__entry">
-      <h1>List of active quizzes</h1>
-      <div id="quiz_list_area" style="font-size: 2em" class="list__soal"></div>
+      <!-- <h1>List of active quizzes</h1>
+      <div id="quiz_list_area" style="font-size: 2em" class="list__soal"></div> -->
+
+      <div class="wrapper_role">
+        <div class="container__role">
+          <div class="img__container__choose">
+            <img
+              src="./assets/img/undraw-choose.png"
+              alt="choose-img"
+              class="img__choose"
+            />
+          </div>
+          <h4>Pilih role Anda</h4>
+          <div id="button__verifikasi"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

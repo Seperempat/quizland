@@ -1,0 +1,88 @@
+.container__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.f__grow {
+  display: flex;
+  flex-grow: 1;
+}
+.container__button__button {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  /* padding: 0 8rem; */
+  padding-left: 16px;
+  padding-right: 16px;
+
+  padding-top: 18px;
+  padding-bottom: 34px;
+  font-size: 24px;
+  background-color: #f8fafc;
+}
+
+.buttons-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.answers {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 10px;
+  gap: 20px;
+  max-width: 1200px;
+
+  justify-items: center;
+}
+
+.answer_list {
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 24px;
+  white-space: normal;
+  width: 100%;
+  cursor: hand;
+  border-radius: 0.45rem;
+  height: 120px;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+}
+
+.answer__container {
+  font-size: 24px;
+}
+
+.rank__status {
+  font-size: 16px;
+  color: #34d399;
+}
+.question {
+  margin-top: 20px;
+  white-space: normal;
+  font-size: 16px;
+}
+
+.container__button_r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.container__button_r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+@media screen and (max-width: 500px) {
+  .answers {
+    grid-template-columns: auto; /* Mengubah menjadi satu kolom */
+  }
+}
