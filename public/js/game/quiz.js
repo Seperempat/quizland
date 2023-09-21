@@ -326,18 +326,10 @@ function GameWorld() {
 
     selectedAnswerId = false;
 
+    //abcd
     for (var i = 0; i < answers.length; i++) {
       var curLetter = String.fromCharCode(65 + i);
       var answerId = i + 1;
-
-      // var $div = $("<div>", { answer_id: answerId })
-      //   .attr(
-      //     "style",
-      //     "font-size:2em; padding-top: 10px; border: 1px solid; margin-top: 2px; overflow:hidden; cursor: pointer; cursor: hand; "
-      //   )
-      //   .addClass("answer_" + answerId)
-      //   .append("<span/>")
-      //   .text(curLetter + ". " + answers[i]);
 
       var $div = $("<div>", { answer_id: answerId })
         .addClass("answer_list")

@@ -8,39 +8,47 @@
   background-color: #f8fafc;
 }
 .answers {
-  /* margin-top: 20px; */
-  margin: 20px auto auto 0;
+  margin-top: 40px;
+  /* margin: 20px auto auto 0;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  justify-content: center;
+  justify-content: center; */
 
-  /* display: grid;
-  grid-template-columns: auto auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: 10px;
   gap: 20px;
   max-width: 1200px;
-  justify-items: center; */
+
+  justify-items: center;
 }
 
 .answer_list {
   overflow: hidden;
   cursor: pointer;
   font-size: 24px;
-
+  white-space: normal;
   width: 100%;
   cursor: hand;
   border-radius: 0.45rem;
-
+  height: 120px;
   background-color: #f8fafc;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   padding: 20px;
-  text-align: center;
 }
 
-.selected {
-  background-color: aqua;
+.question {
+  margin-top: 20px;
+  white-space: normal;
+  font-size: 16px;
 }
-@media screen and (max-width: 400px) {
+.selected {
+  /* background-color: aqua; */
+}
+@media screen and (max-width: 500px) {
   .answers {
     grid-template-columns: auto; /* Mengubah menjadi satu kolom */
   }

@@ -12,3 +12,43 @@
   /* max-width: 1400px; */
   padding: 0 1.875rem;
 }
+
+.img__container__choose {
+  width: 450px;
+  height: auto;
+}
+
+.img__choose {
+  width: 100%;
+}
+
+.container__role {
+  padding: 12px;
+  background-color: #fff;
+  border: solid 1px #cbd5e1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 8px;
+  margin-top: 50px;
+  /* height: 450px; */
+}
+
+h4 {
+  margin-bottom: 12px;
+}
+.container__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.wrapper_role {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

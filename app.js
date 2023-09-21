@@ -38,6 +38,7 @@ app.get("/quiz/:quiz_id", function (req, res) {
   }
 });
 
+
 var isAdmin = function (socket, session) {
   if (!session.ready_for_quiz) {
     socket.emit("quiz_init_nok");
