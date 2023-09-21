@@ -15,11 +15,13 @@
 .btn__default.btn_fill {
   color: white;
   background-color: #a855f7;
+  text-decoration: none;
 }
 .btn__default.btn_outlined {
   border: solid 1px #a855f7;
   color: #a855f7;
   background-color: white;
+  text-decoration: none;
 }
 .btn__default.btn_leave {
   background-color: white !important;
@@ -27,35 +29,42 @@
   color: #f43f5e !important;
   border-width: 1px !important;
   border-style: solid !important;
+  text-decoration: none;
 }
 .btn__default.btn_showleaderboard {
   background-color: #7c3aed !important;
   color: #ffff !important;
+  text-decoration: none;
 }
 
 .btn__default.btn_test {
   background-color: #7c3aed !important;
   color: #ffff !important;
+  text-decoration: none;
 }
 
 .btn__default.btn_cancel {
   background-color: #e2e8f0 !important;
   color: #1e293b !important;
+  text-decoration: none;
 }
 
 .btn__default.btn_start {
   background-color: #7c3aed !important;
   color: #ffff !important;
+  text-decoration: none;
 }
 
 .btn__default.btn_end {
   background-color: #7c3aed !important;
   color: #ffff !important;
+  text-decoration: none;
 }
 
 .btn__default.btn_next {
   background-color: #7c3aed !important;
   color: #ffff !important;
+  text-decoration: none;
 }
 .button__input {
   padding: 0.8rem 1.4rem;
@@ -65,4 +74,5 @@
   border: none;
   width: 100%;
   font-weight: 600;
+  text-decoration: none;
 }

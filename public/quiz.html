@@ -24,7 +24,7 @@
     <div class="element counter__time" id="timer_area">
       <div align="center">
         <div id="timer" style="font-size: 1.5em"></div>
-        <div id="answer_status" style="font-size: 1.5em"></div>
+        <div id="answer_status" class="answer__container"></div>
       </div>
     </div>
 
@@ -60,52 +60,54 @@
       "
     >
       <div class="pic"></div>
-      <div class="question" style="font-size: 2.5em"></div>
+      <div class="question"></div>
       <div class="answers"></div>
     </div>
 
-    <div class="element container__button__button" id="controlpanel_area">
-      <div style="float: left">
-        <span class="element" id="generic_options_area">
-          <button class="btn__default btn_leave" id="btn_leave_quiz">
-            Leave Quiz
-          </button>
-          <button
-            class="btn__default btn_showleaderboard"
-            id="btn_show_leaderboard"
-          >
-            Show Leaderboard
-          </button>
-        </span>
+    <div class="element container__button__button buttons-align" id="controlpanel_area">
+      <div class="container__button_l" id="generic_options_area">
+        <button class="btn__default btn_leave" id="btn_leave_quiz">
+          Leave Quiz
+        </button>
+        <button
+          class="btn__default btn_showleaderboard"
+          id="btn_show_leaderboard"
+        >
+          Show Leaderboard
+        </button>
       </div>
-      <div style="float: right">
-        <span class="element" id="participant_area">
-          <span id="participant_rank" style="color: #fff"></span>
-        </span>
-        <span class="element" id="admin_area_show_answer">
+
+      <div class="container__button_r">
+        <div class="element" id="participant_area">
+          <span id="participant_rank" style="color: rgb(197, 47, 112)"></span>
+        </div>
+        <div class="element" id="admin_area_show_answer">
           <button
             class="btn__default btn_cancel"
             id="btn_admin_cancel_last_question"
           >
             Cancel last Question
           </button>
-        </span>
-        <span class="element" id="admin_area_before_start">
+        </div>
+        <div class="element" id="admin_area_before_start">
           <button class="btn__default btn_test" id="btn_admin_test_question">
             Test Question
           </button>
           <button class="btn__default btn_start" id="btn_admin_start_quiz">
             Start Quiz
           </button>
-        </span>
-        <span class="element" id="admin_area_after_start">
+        </div>
+        <div class="element" id="admin_area_after_start">
           <button class="btn__default btn_next" id="btn_admin_next_question">
             Next Question
           </button>
           <button class="btn__default btn_end" id="btn_admin_end_quiz">
             End Quiz
           </button>
-        </span>
+        </div>
+      </div>
+
+     
       </div>
       <div style="clear: both"></div>
     </div>

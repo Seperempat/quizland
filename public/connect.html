@@ -8,7 +8,7 @@
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/connectcss/forms/formcss.css" />
-	
+
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="css/UI/buttons.css" />
     <link rel="stylesheet" href="css/UI/inputcontrol.css" />
@@ -19,64 +19,13 @@
     <script src="js/game/connect.js"></script>
   </head>
   <body>
-    <div >
+    <!-- <div >
 		<div class="">
 			<div id="quiz_title"></div>
 			<div id="quiz_pic" "></div>
 		</div>
 		
 	  <div class="container__form">
-		
-		<!-- form -->
-		<div class="contianer__input">
-		  <h3>Join as Participant</h3>
-		  <div class="form-group">
-			<label for="unofficial_team_name">Team name</label>
-			<input
-			  type="text"
-			  class="form-control"
-			  id="unofficial_team_name"
-			  placeholder="Masukkan nama team"
-			/>
-		  </div>
-		  <button id="btn_connect_unofficial" class="button__input">
-			Lanjutkan
-		  </button>
-		</div>
-
-		<div class="contianer__input">
-		  <h3>Join as Leader Participant</h3>
-		  <div class="form-group">
-			<label for="official_team_name">Team name</label>
-
-			<input
-			  type="text"
-			  class="form-control"
-			  id="official_team_name"
-			  placeholder="Masukkan nama team"
-			/>
-		  </div>
-
-		  <div class="form-group">
-			<label for="official_team_code">Quiz Code</label>
-
-			<input
-			  type="text"
-			  class="form-control"
-			  id="official_quiz_code"
-			  maxlength="20"
-			  placeholder="Masukkan nama team"
-			/>
-		  </div>
-
-		  <button id="btn_connect_official" class="button__input">Lanjutkan</button>
-		</div>
-
-		<div class="contianer__input">
-		  <h3>Connect as spectator</h3>
-		  <button id="btn_connect_spectator" class="button__input">Lanjutkan</button>
-		</div>
-
 		<div class="contianer__input">
 		  <h3>Connect as administrator</h3>
 		  <div class="form-group">
@@ -94,8 +43,37 @@
 		  <button id="btn_admin_connect" class="button__input">Lanjutkan</button>
 		</div>
 	  </div>
-    </div>
+    </div> -->
 
+    <div class="container__admin__role">
+      <div class="container__form">
+        <!-- form -->
+
+        <div class="contianer__input">
+          <h4>Masuk sebagai Moderator</h4>
+
+          <div class="form-group">
+            <label for="admin_password">Password</label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="admin_password"
+              maxlength="20"
+              placeholder="Masukkan nama team"
+            />
+          </div>
+
+          <button
+            id="btn_admin_connect"
+            class="btn__default btn_fill"
+            style="width: 100%"
+          >
+            Lanjutkan
+          </button>
+        </div>
+      </div>
+    </div>
     <script></script>
   </body>
 </html>

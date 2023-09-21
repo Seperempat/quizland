@@ -397,7 +397,9 @@ function GameWorld() {
       userType == "unofficial_participant"
     ) {
       if (correctAnswer) {
-        $("#answer_status").html("Correct answer!");
+        $("#answer_status").html(
+          `<span class="correct_answer">Correct answer!</span>`
+        );
       } else {
         $("#answer_status").html(
           `<span class="incorrect_answer">Incorrect answer!</span>`
@@ -415,7 +417,10 @@ function GameWorld() {
   this.updateGeneralParams = function (stateParams) {
     if (stateParams && stateParams.rank) {
       var rank = stateParams.rank;
-      $("#participant_rank").html("Rank: " + rank);
+      // $("#participant_rank").html("Rank: " + rank      );
+      $("#participant_rank").html(
+        `<div class="rank__status">Rank ${rank} </div>`
+      );
     }
   };
 }

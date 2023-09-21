@@ -3,9 +3,8 @@
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 0.45rem;
-  border-width: 1;
-  background-color: #cbd5e1;
-  border-color: #94a3b8;
+  border: solid 1px #cbd5e1;
+  background-color: white;
   flex-grow: 3;
 }
 
@@ -15,8 +14,15 @@
   margin-left: auto;
   margin-right: auto;
 }
-.contianer__input h3 {
+.contianer__input h4 {
   margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569;
 }
 
 .container__form {
@@ -24,5 +30,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 560px;
+  width: 450px;
+
   /* margin: 0 auto; */
 }

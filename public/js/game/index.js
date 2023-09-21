@@ -7,6 +7,20 @@ function Index() {
     socket.emit("index_init");
   };
 
+  // this.bindSocketEvents = function () {
+  //   socket.on("index_init_ok", function (data) {
+  //     var html = "";
+
+  //     for (var i in data) {
+  //       var q = data[i];
+
+  //       html += `<div class="list__soal_card"><a href='${q.link}' class='nama-kelas-css'>${q.quiz}</a></div>`;
+  //     }
+
+  //     $("#quiz_list_area").html(html);
+  //   });
+  // };
+
   this.bindSocketEvents = function () {
     socket.on("index_init_ok", function (data) {
       var html = "";
@@ -14,10 +28,21 @@ function Index() {
       for (var i in data) {
         var q = data[i];
 
-        html += `<div class="list__soal_card"><a href='${q.link}' class='nama-kelas-css'>${q.quiz}</a></div>`;
+        html += `
+        <div class="container__buttons" >
+        <a href='${
+          q.link
+        }' id="quiz__as__moderator" class="btn__default btn_outlined">
+          Moderator
+        </a>
+        <a href='${"/users.html"}' id="btn_admin_connect" class="btn__default btn_fill">
+          Pengguna
+        </a>
+      </div>
+        `;
       }
 
-      $("#quiz_list_area").html(html);
+      $("#button__verifikasi").html(html);
     });
   };
 }
