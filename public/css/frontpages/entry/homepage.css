@@ -29,11 +29,35 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  place-content: center;
   align-items: center;
   width: fit-content;
   border-radius: 8px;
   /* height: 450px; */
+}
+
+@media screen and (max-width: 500px) {
+  .img__container__choose {
+    width: fit-content;
+    height: auto;
+  }
+  .container__role {
+    padding: 12px;
+    background-color: #fff;
+    border: solid 1px #cbd5e1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .wrapper_role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 }
 
 h4 {

@@ -5,15 +5,15 @@
   border-radius: 0.45rem;
   border: solid 1px #cbd5e1;
   background-color: white;
-  flex-grow: 3;
 }
 
-.container__form .contianer__input {
-  width: 100%; /* Lebar penuh */
-  max-width: 500px; /* Sesuaikan dengan lebar maksimum yang Anda inginkan */
-  margin-left: auto;
-  margin-right: auto;
+.wrapper_role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
 }
+
 .contianer__input h4 {
   margin-bottom: 2rem;
   color: #1e293b;
@@ -26,12 +26,35 @@ label {
 }
 
 .container__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 560px;
+
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   width: 450px;
 
   /* margin: 0 auto; */
+}
+
+.image__container {
+  width: fit-content;
+  height: auto;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .container__form .contianer__input {
+    width: 100%; /* Lebar penuh */
+    margin: 0 12px;
+  }
+  .contianer__input h4 {
+    margin-bottom: 2rem;
+    color: #1e293b;
+  }
 }
