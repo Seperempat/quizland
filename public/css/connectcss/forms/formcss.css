@@ -1,0 +1,37 @@
+.contianer__input {
+  height: auto;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.45rem;
+  border: solid 1px #cbd5e1;
+  background-color: white;
+  flex-grow: 3;
+}
+
+.container__form .contianer__input {
+  width: 100%; /* Lebar penuh */
+  max-width: 500px; /* Sesuaikan dengan lebar maksimum yang Anda inginkan */
+  margin-left: auto;
+  margin-right: auto;
+}
+.contianer__input h4 {
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569;
+}
+
+.container__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 560px;
+  width: 450px;
+
+  /* margin: 0 auto; */
+}
