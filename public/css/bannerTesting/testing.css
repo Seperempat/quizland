@@ -1,0 +1,10 @@
+.development {
+  background-color: rgb(228, 89, 112);
+  color: purple;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
