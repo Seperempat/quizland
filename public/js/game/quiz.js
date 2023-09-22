@@ -265,9 +265,9 @@ function GameWorld() {
 
           var colorStyle = "";
           if (p.isLastCorrect === true) {
-            colorStyle = "background-color: rgb(133, 255, 135)";
+            colorStyle = "background-color:#a7f3d0";
           } else if (p.isLastCorrect === false) {
-            colorStyle = "background-color: rgb(255, 162, 162)";
+            colorStyle = "background-color: #f8fafc";
           }
 
           html += "<tr style='" + colorStyle + "'>";
@@ -383,14 +383,15 @@ function GameWorld() {
     if (!correctAnswer && selectedAnswerId != false) {
       $("#question_area .answer_" + selectedAnswerId).css(
         "background-color",
-        "rgb(255, 162, 162)"
+        "#fb7185"
       );
     }
 
-    $("#question_area .answer_" + correctAnswerId).css(
-      "background-color",
-      "rgb(133, 255, 135)"
-    );
+    // jawaban benar
+    $("#question_area .answer_" + correctAnswerId).css({
+      "background-color": "#99f6e4",
+      color: "#fffff",
+    });
 
     if (
       userType == "official_participant" ||

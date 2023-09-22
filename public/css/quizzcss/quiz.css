@@ -4,6 +4,14 @@
   height: 100vh;
 }
 
+.timer {
+  font-size: 24px;
+}
+
+.answers {
+  margin-bottom: 30px;
+}
+
 .f__grow {
   display: flex;
   flex-grow: 1;
@@ -19,13 +27,33 @@
   padding-top: 18px;
   padding-bottom: 34px;
   font-size: 24px;
+
   background-color: #f8fafc;
 }
 
-.buttons-align {
+.buttons_align {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .timer {
+    font-size: 24px;
+  }
+
+  .container__button__button {
+    padding: 12px 6px 12px 12px;
+    font-size: 12px;
+    box-shadow: 0px -1px 6px -3px #94a3b8b6;
+    -webkit-box-shadow: 0px -1px 6px -3px #94a3b8b6;
+    -moz-box-shadow: 0px -1px 6px -3px #94a3b8b6;
+  }
+  .buttons_align {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
 }
 .answers {
   margin-top: 40px;
@@ -66,7 +94,7 @@
 .question {
   margin-top: 20px;
   white-space: normal;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .container__button_r {
@@ -75,14 +103,67 @@
   align-items: center;
   gap: 16px;
 }
-.container__button_r {
+.container__button_l {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
 }
+
 @media screen and (max-width: 500px) {
   .answers {
     grid-template-columns: auto; /* Mengubah menjadi satu kolom */
+  }
+  .container__button_l {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .container__button_l button:nth-child(1) {
+    margin-bottom: 8px;
+  }
+  .container__button_r button:nth-child(1) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .answers {
+    margin-top: 24px;
+  }
+
+  .answer_list {
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 16px;
+    white-space: normal;
+    width: 100%;
+    cursor: hand;
+    border-radius: 6px;
+    border: solid 1px #64748b;
+    height: 80px;
+    max-height: 120px;
+    background-color: #f8fafc;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .answer__container,
+  .timer {
+    font-size: 18px;
+  }
+
+  .rank__status {
+    font-size: 16px;
+    color: #34d399;
+  }
+  .question {
+    margin-top: 20px;
+    white-space: normal;
+    font-size: 18px;
+    padding: 0 12px;
   }
 }
