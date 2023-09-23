@@ -90,9 +90,8 @@ img {
 @media screen and (max-width: 500px) {
   .horizontal__line {
     display: flex;
-    flex-direction: column; /* Menjadikan .horizontal__line sebagai container dengan flexbox */
-    align-items: center; /* Pusatkan elemen secara horizontal */
-    /* margin: 8px 0; */
+    flex-direction: column; 
+    align-items: center;
     width: 100%;
     height: 40px;
     position: relative;

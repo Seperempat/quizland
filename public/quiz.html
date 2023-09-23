@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/UI/countertime.css" />
     <link rel="stylesheet" href="css/UI/buttons.css" />
     <link rel="stylesheet" href="css/quizzcss/quiz.css" />
-
+    <link rel="stylesheet" href="css/global/global.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.plugin.min.js"></script>
@@ -21,6 +21,9 @@
     <script src="js/game/quiz.js"></script>
   </head>
   <body>
+    
+
+    </div>
     <div class="element counter__time" id="timer_area">
       <div align="center">
         <div id="timer" class="timer"></div>
@@ -29,20 +32,21 @@
     </div>
 
     <div
-      class="element"
+      class="element bg-img"
       id="wait_area"
       style="display: table; height: 100vh; width: 100%; overflow: hidden"
     >
       <div style="display: table-cell; vertical-align: middle">
-        <div id="wait_status" style="font-size: 2em" align="center">
-          Get ready!
-        </div>
+       
         <div class="spinner" align="center">
           <div class="rect1"></div>
           <div class="rect2"></div>
           <div class="rect3"></div>
           <div class="rect4"></div>
           <div class="rect5"></div>
+        </div>
+        <div id="wait_status" style="font-size: 14px" align="center">
+          Get Ready!
         </div>
       </div>
     </div>

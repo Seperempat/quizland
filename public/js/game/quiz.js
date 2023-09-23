@@ -226,7 +226,7 @@ function GameWorld() {
 
     socket.on("quiz_leaderboard", function (data) {
       var html = "";
-      html += "<div>";
+      html += `<div class="container__rank bg-img">`;
 
       var types = ["official", "unofficial"];
       var names = {

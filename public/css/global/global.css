@@ -1,6 +1,9 @@
-.home__target {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 16px 18px;
+.bg-img {
+  background-image: url("/assets/img/dot-effect.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  height: 100vh;
 }
