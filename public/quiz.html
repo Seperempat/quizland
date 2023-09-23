@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/UI/buttons.css" />
     <link rel="stylesheet" href="css/quizzcss/quiz.css" />
     <link rel="stylesheet" href="css/global/global.css" />
+    <link rel="stylesheet" href="css/bannerTesting/testing.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.plugin.min.js"></script>
@@ -23,6 +24,8 @@
   <body>
     
 
+    <div class="development">
+      Development | pwpengguna:123456
     </div>
     <div class="element counter__time" id="timer_area">
       <div align="center">
@@ -32,7 +35,7 @@
     </div>
 
     <div
-      class="element bg-img"
+      class="element "
       id="wait_area"
       style="display: table; height: 100vh; width: 100%; overflow: hidden"
     >
@@ -52,16 +55,10 @@
     </div>
 
     <div
-      class="element"
+      class="element s__area__question"
       align="center"
       id="question_area"
-      style="
-        width: 100%;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-left: 8px;
-        padding-right: 8px;
-      "
+    
     >
       <div class="pic"></div>
       <div class="question"></div>
@@ -71,7 +68,7 @@
     <div class="element container__button__button buttons_align" id="controlpanel_area">
       <div class="container__button_l" id="generic_options_area">
         <button class="btn__default btn_leave btn_lo" id="btn_leave_quiz">
-          Leave Quiz
+          Leave
         </button>
         <button
           class="btn__default btn_showleaderboard"
@@ -85,16 +82,9 @@
         <div class="element" id="participant_area">
           <span id="  icipant_rank" style="color: rgb(197, 47, 112)"></span>
         </div>
-        <!-- <div class="element" id="admin_area_show_answer">
-          <button
-            class="btn__default btn_cancel"
-            id="btn_admin_cancel_last_question"
-          >
-            Cancel last Question
-          </button>
-        </div> -->
+       
         <div class="element" id="admin_area_before_start">
-          <button class="btn__default btn_test" id="btn_admin_test_question">
+          <button class="btn__default btn_outlined" id="btn_admin_test_question">
             Test Question
           </button>
           <button class="btn__default btn_start" id="btn_admin_start_quiz">

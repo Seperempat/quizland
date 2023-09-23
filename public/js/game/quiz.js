@@ -143,7 +143,7 @@ function GameWorld() {
     $("#btn_leave_quiz").click(function (e) {
       if (
         confirm(
-          "Are you sure you want to leave the quiz? All your data will be lost. (score, etc.)"
+          "Anda yakin ingin keluar dari permainan? Seluruh data akan terhapus"
         )
       ) {
         if (confirm("Are you really sure?")) {
