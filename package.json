@@ -1,7 +1,7 @@
 {
   "name": "quiz",
   "version": "1.0.0",
-  "description": "Multiplayer quiz with nodejs",
+  "description": "Multiplayer quiz ",
   "main": "app.js",
   "dependencies": {
     "express": "^4.16.2",
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shaan1337/quiz.git"
+    "url": "git+https://github.com/Seperempat/quizland.git"
   },
   "author": "LTHGHQ",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shaan1337/quiz/issues"
+    "url": "https://github.com/Seperempat/quizland.git"
   },
-  "homepage": "https://github.com/shaan1337/quiz#readme"
+  "homepage": "https://github.com/Seperempat/quizland.git"
 }

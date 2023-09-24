@@ -1,19 +1,17 @@
-var express = require("express");
-var app = express();
-var server = require("http").createServer(app);
-var io = require("socket.io")(server);
-var express_session = require("express-session")({
+const express = require("express");
+const app = express();
+const server = require("http").createServer(app);
+const io = require("socket.io")(server, {
+  cors: { origin: "*" }, // Atur opsi CORS sesuai kebutuhan Anda
+});
+const express_session = require("express-session")({
   secret: "c60ebe0a696ee406ad598621c0a70c15",
   resave: true,
   saveUninitialized: true,
 });
-var sharedsession = require("express-socket.io-session");
-require("string.prototype.startswith");
-
-var Entities = require("html-entities").XmlEntities;
-var entities = new Entities();
-
-var fs = require("fs");
+const sharedsession = require("express-socket.io-session");
+const path = require("path");
+const fs = require("fs");
 eval(fs.readFileSync("quiz.js") + "");
 
 app.use(express_session);
