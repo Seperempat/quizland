@@ -16,10 +16,9 @@ function Index() {
 
         html += `
         <div class="container__buttons" >
-        <a href='${q.link}' id="btn_admin_connect" class="btn__default btn_outlined">
+        <a href='${q.link}' id="btn_admin_connect" class="btn__default btn_fill">
           Masuki Permainan
         </a>
-      
       </div>
         `;
       }
