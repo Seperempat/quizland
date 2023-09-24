@@ -461,6 +461,11 @@ function Administrator(pSocket) {
   };
 }
 
+function User(pSocket){
+  this.__proto__ = new Participant();
+  
+}
+
 function Questions() {
   var currentQuestion = 0;
   var questions = [];

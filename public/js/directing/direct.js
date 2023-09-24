@@ -1,7 +1,7 @@
-const getHome = document.getElementById("get_direct");
+const getHome = document.getElementById("get_direct_usr");
 
-const redirect = () => {
-  window.location.href = "index.html";
+const redirect = (page) => {
+  window.location.href = page;
 };
 
-getHome.addEventListener("click", redirect);
+getHome.addEventListener("click", () => redirect("users.html"));

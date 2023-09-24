@@ -74,7 +74,8 @@
   white-space: normal;
   width: 100%;
   cursor: hand;
-  border-radius: 0.45rem;
+  border-radius: 6px;
+  border: solid 1px #64748b;
   height: 120px;
   background-color: #f8fafc;
   display: flex;
@@ -189,3 +190,27 @@
 
   padding: 80px 12px;
 }
+
+/* table */
+
+/* CSS Anda */
+.custom-table {
+  width: 80%;
+  font-size: 1.8em;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.custom-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.custom-cell {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Ganti warna latar belakang atau gaya lain sesuai kebutuhan Anda */

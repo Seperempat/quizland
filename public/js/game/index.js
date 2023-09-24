@@ -7,7 +7,6 @@ function Index() {
     socket.emit("index_init");
   };
 
-
   this.bindSocketEvents = function () {
     socket.on("index_init_ok", function (data) {
       var html = "";
@@ -17,14 +16,10 @@ function Index() {
 
         html += `
         <div class="container__buttons" >
-        <a href='${
-          q.link
-        }' id="quiz__as__moderator" class="btn__default btn_outlined">
-          Moderator
+        <a href='${q.link}' id="btn_admin_connect" class="btn__default btn_outlined">
+          Masuki Permainan
         </a>
-        <a href='${"/users.html"}' id="btn_admin_connect" class="btn__default btn_fill">
-          Pengguna
-        </a>
+      
       </div>
         `;
       }

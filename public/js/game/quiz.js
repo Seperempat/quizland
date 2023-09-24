@@ -224,9 +224,78 @@ function GameWorld() {
       })(this)
     );
 
+    // socket.on("quiz_leaderboard", function (data) {
+    //   var html = "";
+    //   html += `<div class="container__rank ">`;
+
+    //   var types = ["official", "unofficial"];
+    //   var names = {
+    //     official: "Official Participants",
+    //     unofficial: "Audience Participants",
+    //   };
+
+    //   for (var t in types) {
+    //     var participantsType = types[t];
+    //     var name = names[participantsType];
+    //     var elements = data[participantsType];
+
+    //     html += "<h1>" + name + "</h1>";
+    //     html +=
+    //       "<table class='table table-hover table-condensed table-striped table-bordered' style='width:80%; font-size: 1.8em'>";
+
+    //     html += "<thead>";
+    //     html += "<tr>";
+    //     html +=
+    //       "<th style='width:50px' >" +
+    //       "Rank" +
+    //       "</th>" +
+    //       "<th>" +
+    //       "Team" +
+    //       "</th>" +
+    //       "<th>" +
+    //       "Score" +
+    //       "</th>";
+    //     html += "</tr>";
+    //     html += "</thead>";
+
+    //     html += "<tbody>";
+
+    //     for (var elem in elements) {
+    //       var p = elements[elem];
+
+    //       var colorStyle = "";
+    //       if (p.isLastCorrect === true) {
+    //         colorStyle = "background-color:#a7f3d0";
+    //       } else if (p.isLastCorrect === false) {
+    //         colorStyle = "background-color: #f8fafc";
+    //       }
+
+    //       html += "<tr style='" + colorStyle + "'>";
+    //       html +=
+    //         "<td>" +
+    //         p.rank +
+    //         "</td>" +
+    //         "<td>" +
+    //         p.team +
+    //         "</td>" +
+    //         "<td>" +
+    //         p.score +
+    //         "</td>";
+    //       html += "</tr>";
+    //     }
+
+    //     html += "</tbody>";
+
+    //     html += "</table>";
+    //   }
+
+    //   console.log(html);
+
+    //   $("#leaderboard_area").html(html);
+    // });
     socket.on("quiz_leaderboard", function (data) {
       var html = "";
-      html += `<div class="container__rank bg-img">`;
+      html += `<div class="container__rank ">`;
 
       var types = ["official", "unofficial"];
       var names = {
@@ -239,20 +308,19 @@ function GameWorld() {
         var name = names[participantsType];
         var elements = data[participantsType];
 
-        html += "<h1>" + name + "</h1>";
-        html +=
-          "<table class='table table-hover table-condensed table-striped table-bordered' style='width:80%; font-size: 1.8em'>";
+        html += "<h4>" + name + "</h4>";
+        html += "<table class='custom-table'>"; // Tambahkan kelas "custom-table"
 
         html += "<thead>";
         html += "<tr>";
         html +=
-          "<th style='width:50px' >" +
+          "<th class='custom-header'>" + // Tambahkan kelas "custom-header"
           "Rank" +
           "</th>" +
-          "<th>" +
+          "<th class='custom-header'>" + // Tambahkan kelas "custom-header"
           "Team" +
           "</th>" +
-          "<th>" +
+          "<th class='custom-header'>" + // Tambahkan kelas "custom-header"
           "Score" +
           "</th>";
         html += "</tr>";
@@ -272,13 +340,13 @@ function GameWorld() {
 
           html += "<tr style='" + colorStyle + "'>";
           html +=
-            "<td>" +
+            "<td class='custom-cell'>" + // Tambahkan kelas "custom-cell"
             p.rank +
             "</td>" +
-            "<td>" +
+            "<td class='custom-cell'>" + // Tambahkan kelas "custom-cell"
             p.team +
             "</td>" +
-            "<td>" +
+            "<td class='custom-cell'>" + // Tambahkan kelas "custom-cell"
             p.score +
             "</td>";
           html += "</tr>";

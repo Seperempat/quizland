@@ -1,10 +1,18 @@
 .development {
   background-color: rgb(228, 89, 112);
-  color: purple;
+  color: white;
   font-weight: 500;
-  font-size: 18px;
-  padding: 8px 12px;
+  font-size: 12px;
+  padding: 2px 12px;
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.development-quiz {
+  background-color: rgb(228, 89, 112);
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 2px 12px;
 }
