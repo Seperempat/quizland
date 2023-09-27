@@ -13,6 +13,8 @@
   background-color: rgb(228, 89, 112);
   color: white;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   padding: 2px 12px;
+  position: absolute;
+  top: -9px;
 }

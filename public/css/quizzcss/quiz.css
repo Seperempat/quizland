@@ -196,13 +196,14 @@
 /* CSS Anda */
 .custom-table {
   width: 80%;
-  font-size: 1.8em;
+  font-size: 18px;
+
   border-collapse: collapse;
   border: 1px solid #ddd;
 }
 
 .custom-header {
-  background-color: #333;
+  background-color: #c084fc;
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -213,4 +214,16 @@
   text-align: center;
 }
 
-/* Ganti warna latar belakang atau gaya lain sesuai kebutuhan Anda */
+@media screen and (max-width: 500) {
+  .custom-table {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+.custom-gap-color:nth-child(even) {
+  background-color: #d8b4fe;
+}
+
+.custom-gap-color:nth-child(odd) {
+  background-color: #e9d5ff;
+}

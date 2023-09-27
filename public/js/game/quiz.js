@@ -297,10 +297,10 @@ function GameWorld() {
       var html = "";
       html += `<div class="container__rank ">`;
 
-      var types = ["official", "unofficial"];
+      var types = ["official"];
       var names = {
-        official: "Official Participants",
-        unofficial: "Audience Participants",
+        official: "LEADERBOARD",
+        // unofficial: "Audience Participants",
       };
 
       for (var t in types) {
@@ -309,18 +309,18 @@ function GameWorld() {
         var elements = data[participantsType];
 
         html += "<h4>" + name + "</h4>";
-        html += "<table class='custom-table'>"; // Tambahkan kelas "custom-table"
+        html += "<table class='custom-table'>";
 
         html += "<thead>";
         html += "<tr>";
         html +=
-          "<th class='custom-header'>" + // Tambahkan kelas "custom-header"
+          "<th class='custom-header'>" +
           "Rank" +
           "</th>" +
-          "<th class='custom-header'>" + // Tambahkan kelas "custom-header"
-          "Team" +
+          "<th class='custom-header'>" +
+          "Name" +
           "</th>" +
-          "<th class='custom-header'>" + // Tambahkan kelas "custom-header"
+          "<th class='custom-header'>" +
           "Score" +
           "</th>";
         html += "</tr>";
@@ -338,15 +338,15 @@ function GameWorld() {
             colorStyle = "background-color: #f8fafc";
           }
 
-          html += "<tr style='" + colorStyle + "'>";
+          html += "<tr class='custom-gap-color' style='" + colorStyle + "'>";
           html +=
-            "<td class='custom-cell'>" + // Tambahkan kelas "custom-cell"
+            "<td class='custom-cell'>" +
             p.rank +
             "</td>" +
-            "<td class='custom-cell'>" + // Tambahkan kelas "custom-cell"
+            "<td class='custom-cell'>" +
             p.team +
             "</td>" +
-            "<td class='custom-cell'>" + // Tambahkan kelas "custom-cell"
+            "<td class='custom-cell'>" +
             p.score +
             "</td>";
           html += "</tr>";
