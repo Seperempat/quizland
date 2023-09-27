@@ -33,12 +33,12 @@ function Connect() {
 
     socket.on("connect_connect_nok_invalid_team_name", function () {
       alert(
-        "Invalid team name! Please try another one (must be at least 4 characters and not used by another team)"
+        "Invalid name! Please try another one (must be at least 4 characters and not used by another user)"
       );
     });
 
     socket.on("connect_connect_nok_invalid_admin_password", function () {
-      alert("Invalid administrator password!");
+      alert("Invalid moderator password!");
     });
 
     socket.on("connect_connect_ok", function (data) {
